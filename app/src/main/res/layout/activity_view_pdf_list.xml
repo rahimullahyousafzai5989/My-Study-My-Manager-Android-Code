@@ -1,0 +1,58 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mylayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Files not found"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <include
+            android:id="@+id/mytoolbar"
+            layout="@layout/dashboardtoolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pdffilelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/mytoolbar"
+
+            ></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:background="@color/rippleAccent"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="60dp"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/ic_user_avatar"
+            android:title="My Profile" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Dashboard">
+            <menu>
+                <item
+                    android:id="@+id/nav_collection"
+                    android:icon="@drawable/ic_book"
+                    android:title="My Collection" />
+                <item
+                    android:id="@+id/nav_requests"
+                    android:icon="@drawable/ic_group_add_black_24dp"
+                    android:title="My Requests" />
+
+                <item
+                    android:id="@+id/nav_reminder"
+                    android:icon="@drawable/ic__alarm_clock"
+                    android:title="My Reminder" />
+                <item
+                    android:id="@+id/nav_friend"
+                    android:icon="@drawable/ic_group_black_24dp"
+                    android:title="My Friends" />
+
+            </menu>
+
+        </item>
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="More">
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_logout"
+                android:title="Share Profile Link" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+
+        </item>
+
+    </group>
+
+</menu>

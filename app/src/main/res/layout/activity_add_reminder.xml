@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddReminder">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        ></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_margin="7dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="Reminder Title (e.g Quiz #1)"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content">
+
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="Subject Title (e.g English)"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content">
+
+
+                </com.google.android.material.textfield.TextInputEditText>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Select Category"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <Spinner
+                       android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/categories"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/deadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Date And Time"
+                    android:focusable="false"
+                    android:inputType="textPersonName"></com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+                <Button
+                    android:id="@+id/btn_setreminder"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="#00695C"
+                    android:padding="15dp"
+                    android:text="Set Reminder"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.172" />
+                -
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

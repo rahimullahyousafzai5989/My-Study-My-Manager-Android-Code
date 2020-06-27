@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:weightSum="10"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/loginheader"
+        />
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="6"
+       >
+
+
+       //Third party Library materia design
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/input_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Username"
+           android:textSize="16sp"
+           android:layout_margin="8dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.0"
+           android:inputType="textPersonName"
+           >
+
+
+
+       </com.google.android.material.textfield.TextInputEditText>
+
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/input_password"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Password"
+           android:inputType="textPassword"
+           android:textSize="16sp"
+           android:layout_margin="8dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/input_name"
+           app:layout_constraintVertical_bias="0.027">
+
+       </com.google.android.material.textfield.TextInputEditText>
+
+       <Button
+           android:id="@+id/btn_login"
+           android:layout_width="match_parent"
+
+           android:layout_height="wrap_content"
+           android:layout_margin="8dp"
+           android:background="#00695C"
+
+           android:padding="15dp"
+           android:text="Login"
+           android:textColor="#fff"
+           android:textSize="16sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/input_password"
+           app:layout_constraintVertical_bias="0.107" />
+
+       <TextView
+
+           android:id="@+id/textView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Not a member yet.?"
+           android:textAlignment="center"
+           android:textSize="16sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/btn_login"
+           app:layout_constraintVertical_bias="0.038" />
+
+
+       <Button
+           android:id="@+id/btn_signup"
+           android:layout_width="match_parent"
+
+           android:layout_height="wrap_content"
+           android:layout_margin="8dp"
+           android:background="#00695C"
+           android:padding="15dp"
+           android:text="Sign Up"
+           android:textColor="#fff"
+           android:textSize="16sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView"
+           app:layout_constraintVertical_bias="0.172" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

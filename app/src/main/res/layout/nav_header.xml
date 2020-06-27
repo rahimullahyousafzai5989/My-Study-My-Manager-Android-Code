@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="#CA00695C"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Study Manager"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/header_emailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="mystudymanager@gmail.com"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

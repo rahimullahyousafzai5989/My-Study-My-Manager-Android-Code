@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    >
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loader1"
+        android:background="#1a1623"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dashboardheader"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/collectionbtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                 >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_collection2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Collections"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.3"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/collec_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="#fff"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_collection1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Files"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.3"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/file_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="#fff"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_assignment2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Quizes"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.3"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/quiz_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="#fff"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_quiz"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Assignment"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.3"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/assignment_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="#8B000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

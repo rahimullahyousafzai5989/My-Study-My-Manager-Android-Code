@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_margin="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/myvideoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A000000"
+            />
+        <ImageView
+            android:id="@+id/playvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_play_circle_outline_black_24dp"
+            android:layout_gravity="center"
+            />
+    <TextView
+        android:id="@+id/myfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="asdsadasdasdasd.mp4"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:background="#46000000"
+        android:textColor="#fff"
+        />
+        <LinearLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#35FFFFFF"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+
+                >
+                <CheckBox
+                    android:id="@+id/deleteitems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="comsats.edu.atd.studymanager.DashboardFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_collection" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="comsats.edu.atd.studymanager.CollectionFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_request"
+        android:name="comsats.edu.atd.studymanager.RequestFragment"
+        android:label="@string/menu_request"
+        tools:layout="@layout/fragment_request" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="comsats.edu.atd.studymanager.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="comsats.edu.atd.studymanager.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_reminder" />
+
+    <fragment
+        android:id="@+id/nav_requests"
+        android:name="comsats.edu.atd.studymanager."
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_reminder" />
+
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="comsats.edu.atd.studymanager.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="comsats.edu.atd.studymanager.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
